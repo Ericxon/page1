@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIENVENIDO - alinicio - SISIUDH</title>
+    <style>
+        /* 1. FONDO GRIS OSCURO */
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #585858;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 6px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            display: flex;
+            width: 1000px;
+            min-height: 95vh;
+            gap: 10px;
+        }
+
+        /* PANEL IZQUIERDO */
+        .left-panel {
+            background-color: #FFFFFF;
+            width: 40%;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+
+        /* PANEL DERECHO */
+        .right-panel {
+            background-color: #FFFFFF;
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center; 
+        }
+
+        /* === ESTILOS DEL CONTENIDO === */
+
+        .left-panel .logo {
+            width: 200px; 
+        }
+
+        .left-panel .faculty-title {
+            display: block; 
+            font-family: Tahoma;
+            font-size: small;
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+            text-align: left; 
+        }
+
+        .profile-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .left-panel .profile-placeholder {
+            width: 124px; 
+            height: 137px;
+            border: 1px solid #AAA;
+            background-color: #EBF3FB; 
+        }
+        
+        .left-panel .user-name {
+            display: block; 
+            font-family: Tahoma;
+            font-size: small;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: left; 
+        }
+
+        .menu-container-with-border {
+            border: 1px solid #90EE90; 
+            margin-top: 15px; 
+            padding: 1px; 
+        }
+        
+        .nav-menu {
+            width: 100%;
+        }
+        
+        .menu-header {
+            display: block; 
+            text-decoration: none; 
+            background-color: #006400; 
+            border: 1px solid #90EE90; 
+            color: white;
+            /* === CAMBIO 1: Padding (espacio interno) reducido === */
+            padding: 3px 5px;
+            font-weight: bold;
+            /* === CAMBIO 2: Margen (espacio externo) reducido === */
+            margin-top: 5px; 
+            font-size: 13px;
+        }
+
+        .nav-menu .menu-header:first-of-type {
+            margin-top: 0;
+        }
+        
+        .menu-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .menu-list.numbered {
+            list-style-position: inside;
+            padding-left: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .menu-item {
+            display: block;
+            /* === CAMBIO 3: Padding (espacio interno) de items reducido === */
+            padding: 2px 10px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .menu-item:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 25px; 
+        }
+        .user-link {
+            color: #0000FF;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .logout-button {
+            background-color: #FF0000;
+            color: white;
+            border: 1px solid #8B0000;
+            border-radius: 4px; 
+            padding: 5px 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        /* ESTILOS PANEL DERECHO */
+        .main-content-identifier {
+            font-family: Arial, sans-serif; 
+            font-size: 14px; 
+            color: #333;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+        .divider {
+            border: 0;
+            border-top: 1px solid #A0A0A0; 
+            margin: 15px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left-panel">
+            <img src="images/logoudh3.jpg" alt="Logo UDH" class="logo">
+
+            <center><span id="ctl00_lblreferencia" style="font-family: Tahoma; font-size: small">INGENIERIA CIVIL</span></center>
+            <center><td class="style3"><img id="ctl00_Image2" src="matricula/fotos/047_202416018060949008.jpg?1.1.0" style="height:137px;width:124px;"></td></center>
+            <span id="ctl00_lblreferencia" style="font-family: Tahoma; font-size: small">ARANA RENGIFO, GABRIEL OMAR</span>
+
+            <div class="menu-container-with-border">
+                <nav class="nav-menu">
+                    <a href="#" class="menu-header">Aula Virtual</a>
+                    <ul class="menu-list">
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;"># Biblioteca Virtual</a></li>
+                        <li><a href="Mi perfil _ Aula Virtual UDH.html" class="menu-item" style="color: #7C6F57;"># Mi perfil</a></li>
+                        <li><a href="#" class="menu-item" style="color: #0369a1; font-weight: bold;">#Carpetas Digitales</a></li>
+                    </ul>
+
+                    <a href="#" class="menu-header">Académico</a>
+                    <ol class="menu-list">
+                        <li><a href="#" class="menu-item" style="color: #7C6F57; font-weight: bold;">1. Generar Recibo de Matrícula</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57; font-weight: bold;">2. Matrícula</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57; font-weight: bold;">3. Ver Horario</a></li>
+                    </ol>
+                    <ul class="menu-list">
+                        <li><a href="#" class="menu-item" style="color: #7C6F57; font-weight: bold;">Bolsa de Trabajo UDH</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57; font-weight: bold;">Inscripcion Idioma Extranjero</a></li>
+                        
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Boleta de Notas</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Carnet Universitario SUNEDU</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Congresos y otros conceptos</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Consentimiento Informado - Ver</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Consulta Registro de Grados y Títulos</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Consultas/Quejas realizadas (Defensoría)</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Cursos llevados</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Educación a Distancia</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Evaluación Diaria</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Ficha de Inscripción para Titulación</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Ficha Socio-Económica</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Historial Académico</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Inscripción al Taller de Trab. de Inv.(Bachiller)</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Malla curricular</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Mi Asistencia</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Notas Parciales</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Plan de Estudios</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Reglamento del estudiante</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Rendimiento académico</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Subir Fotografía</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Tarjeta de Identificación Virtual</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Tramite Documentario</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Tramite Grados y Títulos</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Trámite seguimiento</a></li>
+                    </ul>
+
+                    <a href="#" class="menu-header">Económico</a>
+                    <ul class="menu-list">
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Estado de Cuenta(bco)</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Historial Económico</a></li>
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Pagos virtuales-Manual</a></li>
+                    </ul>
+
+                    <a href="#" class="menu-header">Mantenimiento</a>
+                    <ul class="menu-list">
+                        <li><a href="#" class="menu-item" style="color: #7C6F57;">Cambio de clave</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="user-link">696 Usuarios</a>
+                <br>
+                <button class="logout-button">Cerrar</button>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <span id="text">2025-2 34</span>
+            <br><br><br><br><br><br><br><br><br>
+            <hr class="divider">
+            <br><br>
+            <hr class="divider">
+        </div>
+
+    </div>
+
+</body>
+</html>
